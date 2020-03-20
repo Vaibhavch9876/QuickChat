@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QrActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/app_bar_layout"
+            android:id="@+id/qr_toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="20dp"
+                android:id="@+id/qrNameTextView"
+                android:text="YOUR NAME"
+                android:textAlignment="center"
+                android:textSize="26sp"/>
+
+
+            <ImageView
+                android:id="@+id/qrImageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                app:srcCompat="@drawable/common_google_signin_btn_icon_light_normal_background" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/qrIdTextView"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:text="ID : "
+                android:textColor="@color/colorPrimary"
+                android:textIsSelectable="true"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
